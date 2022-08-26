@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgb(248, 61, 103), rgb(130, 69, 199));
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .head {
+            height: 50px;
+            width: 252.5px;
+            background-color: rgb(255, 198, 0);
+            border: none;
+            font-size: 18px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        #image {
+            background-image: url(https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg);
+            background-position: center;
+            height: 400px;
+            width: 850px;
+        }
+
+        #outer {
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-right: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #text {
+            background-color: rgb(255, 198, 0);
+            border: none;
+            display: block;
+            height: 50px;
+            width: 240px;
+            font-size: 20px;
+            font-weight: 800;
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        #text2 {
+            background-color: rgb(255, 198, 0);
+            border: none;
+            font-weight: 800;
+            position: absolute;
+            margin-top: 180px;
+            margin-left: 50px;
+        }
+
+        .p1 {
+            height: 190px;
+            width: 400px;
+            margin-top: 10px;
+            background-color: rgb(255, 198, 0);
+            display: flex;
+            flex-direction: column;
+           
+            align-items: center;
+        }
+
+        #pri {
+            font-size: 40px;
+            height: 0px;
+        }
+
+        h2 {
+            font-size: 15px;
+            display: inline;
+        }
+
+        /*#prices{
+            margin-left: 950px;
+            margin-top: -460px;
+        }*/
+        .box {
+            height: 200px;
+            width: 280px;
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            color: rgb(126, 124, 121);
+            font-weight: 900;
+        }
+
+        #outer2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        b {
+            font-size: 45px;
+        }
+
+        h3 {
+            color: black;
+        }
+
+        h4 {
+            font-size: 15px;
+            font-weight: 900;
+        }
+
+        #Taco {
+            height: 300px;
+            width: 1000px;
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+
+        #Pic {
+            height: 100px;
+            max-width: 100px;
+            margin-top: 50px;
+            margin-left: 60px;
+        }
+
+        #outer3 {
+            display: flex;
+            margin-left: 50px;
+            margin-top: 30px;
+            background-color: white;
+            max-width: 1280px;
+            height: 400px;
+        }
+        p{
+            display: flex;
+        }
+
+
+        @media only screen and (max-width:1407px) {
+            .head {
+                font-size: 10px;
+                width: 150px;
+            }
+        }
+        @media only screen and (max-width:1372px) {
+            .p1 {
+                width: 300px;
+            }
+            p{
+                right: 150px;
+            }
+            h2{
+                right: 150px;
+            }
+        }
+        @media only screen and (max-width:1354px){
+            #outer3{
+              width: 1000px;
+              margin-left: 200px;
+            }
+        }
+        @media only screen and (max-width:1331px){
+            .box{
+                width: 200px;
+            }
+        }
+        @media only screen and (max-width:1306px){
+            #outer3{
+                margin-left: 150px;
+            }
+        }
+        @media only screen and (max-width:1276px) {
+            .p1 {
+                width: 250px;
+            }
+        }
+        @media only screen and (max-width:1242px){
+            #outer3{
+                margin-left: 100px;
+            }
+        }
+        @media only screen and (max-width:1222px) {
+            #image{
+                width: 700px;
+            }
+        }
+        @media only screen and (max-width:1124px){
+            #Taco{
+              width: 350px;
+            }
+            #pic{
+                width: 200px;
+            }
+            #outer3{
+                width: 800px;
+                margin-left: 10px;
+                margin-left: 50px;
+            }
+            button{
+               margin-top: -4px;
+            }
+        }
+        @media only screen and (max-width:1076px) {
+            #image{
+                width: 600px;
+            }
+        }
+        @media only screen and (max-width:1063px) {
+            .head {
+                font-size: 10px;
+                width: 150px;
+                margin-left: 10px;
+            }
+        @media only screen and (max-width:1015px){
+            .box{
+                width: 150px;
+                height: 250px;
+            }
+        }
+        @media only screen and (max-width:974px) {
+            #image{
+                width: 700px;
+            }
+        }
+        @media only screen and (max-width:925px) {
+            .p1{
+                left: 130px;
+            }
+            #outer{
+                flex-direction: column;
+            }
+            #prices{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+        @media only screen and (max-width:873px) {
+            #outer3{
+                width: 700px;
+            }
+        }
+        @media only screen and (max-width:832px) {
+            #outer3{
+                width: 700px;
+            }
+        }
+        @media only screen and (max-width:810px){
+            .box{
+                width: 90px;
+                height: 270px;
+            }
+        }
+            #header {
+                justify-content: center;
+            }
+        }
+        @media only screen and (max-width:774px) {
+            #outer3{
+                height: 600px;
+                width: 500px;
+                flex-direction: column;
+                margin-left: 50px;
+            }
+            #Taco{
+                margin-top: 160px;
+                margin-left: 20px;
+            }
+        }
+        @media only screen and (max-width:632px) {
+            #image{
+                width: 500px;
+                height: 450px;
+            }
+            .p1{
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <button class="head">TACOS</button>
+        <button class="head">BEERS</button>
+        <button class="head">WINES</button>
+        <button class="head">DESSERTS</button>
+        <button class="head">RESERVATIONS</button>
+    </div>
+    <div id="outer">
+        <div id="image">
+            <button id="text">Terry's Taco Joint</button>
+            <button id="text2">Pretty good tacos!</button>
+        </div>
+        <div id="prices">
+            <div class="p1">
+                    <p id="pri">$1.99</p>
+                    <h2>Tacos</h2>
+            </div>
+            <div class="p1">
+                    <p id="pri">$3.99</p>
+                    <h2>Kombucha</h2>
+            </div>
+        </div>
+    </div>
+    <div id="outer2">
+        <div class="box">
+            <b>🌮</b>
+            <h3>Tacos</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</h4>
+        </div>
+        <div class="box">
+            <b>🍺</b>
+            <h3>Beer</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</h4>
+        </div>
+        <div class="box">
+            <b>🍷</b>
+            <h3>Wine</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</h4>
+        </div>
+        <div class="box">
+            <b>🎵</b>
+            <h3>Music</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</h4>
+        </div>
+    </div>
+    <div id="outer3">
+        <div id="Pic">
+            <img src="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/queso-taco.png" alt="">
+        </div>
+        <div id="Taco">
+            <h1>Featured Taco</h1>
+            <h3>Slim Profile, easy to hold and loaded with cheese</h3>
+            <h3>This is the one you have been waiting for</h3>
+            <button class="head">
+                <h3 style="margin-top: 6px;">Learn more -></h3>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
